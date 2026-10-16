@@ -21,7 +21,12 @@ const Navbar = () => {
                     <li><Link href="/">Contact</Link></li>
                 </ul>
             </div>
-            <Link href="/"><button>{`Let's Talk`}</button></Link>
+            <Link 
+              href='/' 
+              className='bg-white text-black font-libre px-8 py-2 rounded-[5px] hover:bg-neutral-200 transition text-sm shadow-md '
+            >
+              {`Let's Talk`}
+            </Link>
 
             </div>
         </div>

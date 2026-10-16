@@ -45,7 +45,7 @@ body {
       rgba(11, 11, 13, 0.8) 15%,
       transparent 85%
     ),
-    url("/images/hero-bg.jpg");
+    url("/images/herobg.jpg.jpg");
 
   background-size: cover;
   background-position: center;
