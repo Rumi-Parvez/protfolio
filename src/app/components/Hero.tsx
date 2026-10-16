@@ -5,9 +5,11 @@ import { FaDownload } from "react-icons/fa";
 
 import herorumi from "../../assets/ChatGPT Image Jun 10, 2026, 07_46_13 PM-Photoroom.png";
 import Navbar from "./Navbar";
+import Tech from "./tech";
 
 const Hero = () => {
   return (
+    <>
     <div className="hero">
       <Navbar></Navbar>
       <div className=" relative container mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto py-10 z-10">
@@ -53,9 +55,13 @@ const Hero = () => {
         </div>
         
       </div>
-      <div className="absolute bottom-1  w-full h-50 bg-gradient-to-b from-black via-black/97 to-transparent pointer-events-none rotate-180 z-10"></div>
+      <div className="absolute bottom-1  w-full h-50 bg-gradient-to-b from-black via-black/98 to-transparent pointer-events-none rotate-180 z-10"></div>
       
     </div>
+    <div className="mt-[-10px] bg-black  ">
+      <Tech></Tech>
+    </div>
+    </>
   );
 };
 
