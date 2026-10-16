@@ -6,6 +6,9 @@ const Hero = () => {
     return (
         <div className='hero'>
             <Navbar></Navbar>
+            <div className='mt-25'>
+                
+            </div>
             
         </div>
     );

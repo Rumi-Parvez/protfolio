@@ -2,6 +2,14 @@
 @plugin "daisyui";
 
 
+
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
+  --font-fjalla: var(--font-fjalla), sans-serif;
+  --font-libre: var(--font-libre-caslon), serif;
+  --font-italiana: var(--font-italiana), serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

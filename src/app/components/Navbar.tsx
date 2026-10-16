@@ -1,12 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
+
+import rumiparvez from "../../assets/ycb3ja.jpg (1).jpeg"
 
 const Navbar = () => {
     return (
         <div className="container mx-auto px-15">
             <div className='  mx-auto h-15  w-350   mt-4  sticky top-0 z-50  border border-white bg-black/10 backdrop-blur-xl rounded-full flex justify-between items-center px-10 font-extralight text-white'>
-            <div>
-                <h1>Rumi Parvez</h1>
+            <div className='flex justify-center items-center gap-3'>
+                <Image src={rumiparvez} alt='Rumi Parvez' height={500} width={500} className='h-10 w-10 rounded-full ' ></Image>
+                <h1 className='font-italiana text-2xl'>Rumi Parvez</h1>
             </div>
             <div>
                 <ul className='flex justify-between items-center gap-5 font-sans text-white'>
