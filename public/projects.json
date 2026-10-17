@@ -1,0 +1,273 @@
+
+[
+  {
+    "id": 1,
+    "year": "2026",
+    "category": "Full-Stack Web Application",
+    "title": "Bazar Dor — Smart Daily Market Price Tracker",
+    "description": "A responsive web platform for exploring daily product prices and comparing market trends.",
+    "metrics": [
+      {
+        "value": "Responsive",
+        "label": "Optimized for mobile, tablet, and desktop"
+      },
+      {
+        "value": "Real-Time API",
+        "label": "Product and category data integration"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Better Auth",
+      "REST API"
+    ],
+    "image": "/images/projects/bazar-dor.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 2,
+    "year": "2026",
+    "category": "Fitness & Productivity",
+    "title": "FitLog — Personal Fitness Management",
+    "description": "A fitness web application designed to help users organize and track their fitness activities.",
+    "metrics": [
+      {
+        "value": "Simple UI",
+        "label": "A clear and easy-to-use experience"
+      },
+      {
+        "value": "Persistent",
+        "label": "Local data storage support"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "LocalStorage"
+    ],
+    "image": "/images/projects/fitlog.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 3,
+    "year": "2026",
+    "category": "Developer Tools",
+    "title": "Lenghool — A Custom Programming Language",
+    "description": "An ongoing developer tool project exploring a custom programming language, CLI, and editor support.",
+    "metrics": [
+      {
+        "value": "CLI",
+        "label": "Command-line workflow"
+      },
+      {
+        "value": "VS Code",
+        "label": "Custom language extension"
+      }
+    ],
+    "skills": [
+      "TypeScript",
+      "Node.js",
+      "CLI",
+      "VS Code Extension",
+      "Testing"
+    ],
+    "image": "/images/projects/lenghool.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 4,
+    "year": "2026",
+    "category": "Authentication System",
+    "title": "SecureAuth — User Authentication",
+    "description": "A learning project focused on implementing email verification and user authentication workflows.",
+    "metrics": [
+      {
+        "value": "Email",
+        "label": "Email and password authentication"
+      },
+      {
+        "value": "Verification",
+        "label": "Account verification workflow"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "Better Auth",
+      "MongoDB",
+      "Resend",
+      "TypeScript"
+    ],
+    "image": "/images/projects/secure-auth.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 5,
+    "year": "2026",
+    "category": "Personal Portfolio",
+    "title": "Developer Portfolio — Digital Identity",
+    "description": "A personal portfolio showcasing development projects, technical interests, and contact information.",
+    "metrics": [
+      {
+        "value": "Responsive",
+        "label": "Adaptable layouts across screen sizes"
+      },
+      {
+        "value": "Custom UI",
+        "label": "A distinctive visual identity"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "CSS",
+      "Responsive Design"
+    ],
+    "image": "/images/projects/portfolio.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 6,
+    "year": "2026",
+    "category": "E-Commerce",
+    "title": "ShopSphere — Modern Online Store",
+    "description": "A sample online store concept featuring product discovery, category browsing, and product detail pages.",
+    "metrics": [
+      {
+        "value": "Catalog",
+        "label": "Organized product browsing"
+      },
+      {
+        "value": "Product Pages",
+        "label": "Detailed product information"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API"
+    ],
+    "image": "/images/projects/shopsphere.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 7,
+    "year": "2026",
+    "category": "Education Technology",
+    "title": "LearnFlow — Online Learning Platform",
+    "description": "A sample learning platform concept for browsing courses, organizing lessons, and tracking learning progress.",
+    "metrics": [
+      {
+        "value": "Courses",
+        "label": "Structured learning content"
+      },
+      {
+        "value": "Progress",
+        "label": "Learning journey overview"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React",
+      "UI Design"
+    ],
+    "image": "/images/projects/learnflow.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 8,
+    "year": "2026",
+    "category": "Task Management",
+    "title": "Taskly — Personal Task Organizer",
+    "description": "A sample productivity app concept for organizing tasks, priorities, and project workflows.",
+    "metrics": [
+      {
+        "value": "Task Boards",
+        "label": "Organized task management"
+      },
+      {
+        "value": "Workflow",
+        "label": "Clear task status tracking"
+      }
+    ],
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "State Management"
+    ],
+    "image": "/images/projects/taskly.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 9,
+    "year": "2026",
+    "category": "Finance Dashboard",
+    "title": "FinTrack — Personal Finance Dashboard",
+    "description": "A sample dashboard concept for organizing expenses, reviewing budgets, and viewing spending summaries.",
+    "metrics": [
+      {
+        "value": "Dashboard",
+        "label": "A centralized financial overview"
+      },
+      {
+        "value": "Visual Reports",
+        "label": "Readable spending summaries"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Data Visualization",
+      "React"
+    ],
+    "image": "/images/projects/fintrack.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+  {
+    "id": 10,
+    "year": "2026",
+    "category": "Weather Application",
+    "title": "SkyCast — Weather Explorer",
+    "description": "A sample weather app concept for displaying current conditions and forecast information using a weather API.",
+    "metrics": [
+      {
+        "value": "API",
+        "label": "External weather data integration"
+      },
+      {
+        "value": "Responsive",
+        "label": "Weather information on different screens"
+      }
+    ],
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API",
+      "React"
+    ],
+    "image": "/images/projects/skycast.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  }
+]

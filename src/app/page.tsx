@@ -2,6 +2,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import ContactCallout from "./components/Mail";
+import Projects from "./components/Projects";
 import MyStories from "./components/Story";
 import Tech from "./components/tech";
 import PhilosophyVideo from "./components/Video";
@@ -18,6 +19,7 @@ export default function Home() {
         <About></About>
         <WhyPartnerWithMe></WhyPartnerWithMe>
          <Tech></Tech>
+         <Projects></Projects>
         <PhilosophyVideo></PhilosophyVideo>
        
         <MyStories></MyStories>
