@@ -5,6 +5,7 @@ import ContactCallout from "./components/Mail";
 import Projects from "./components/Projects";
 import MyStories from "./components/Story";
 import Tech from "./components/tech";
+import TopProjects from "./components/TopProject";
 import PhilosophyVideo from "./components/Video";
 import WhyPartnerWithMe from "./components/Whyme";
 
@@ -17,9 +18,11 @@ export default function Home() {
         <Hero></Hero>
         <Tech></Tech>
         <About></About>
-        <WhyPartnerWithMe></WhyPartnerWithMe>
+        
          <Tech></Tech>
+         <TopProjects></TopProjects>
          <Projects></Projects>
+         <WhyPartnerWithMe></WhyPartnerWithMe>
         <PhilosophyVideo></PhilosophyVideo>
        
         <MyStories></MyStories>
