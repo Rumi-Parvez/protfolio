@@ -27,7 +27,7 @@ const Hero = () => {
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
-              href="/"
+              href="/contact"
               className="bg-white text-black font-libre px-15 py-3 rounded-[5px] hover:bg-neutral-200 transition  shadow-md ">
               {`Let's Talk`}
             </Link>

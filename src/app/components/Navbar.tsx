@@ -19,11 +19,11 @@ const Navbar = () => {
                     <li><Link href="/">About</Link></li>
                     <li><Link href="/">Projects</Link></li>
                     <li><Link href="/">Story</Link></li>
-                    <li><Link href="/">Contact</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </div>
             <Link 
-              href='/' 
+              href='/contact' 
               className='bg-white flex justify-center items-center gap-2 text-black font-libre px-8 py-2 rounded-[5px] hover:bg-neutral-200 transition text-sm shadow-md '
             >
               {`Let's Talk`}

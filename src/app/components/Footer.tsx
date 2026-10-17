@@ -1,25 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  FaFacebookF, 
-  FaLinkedinIn, 
-  FaInstagram, 
-  FaXTwitter, 
-  FaGithub, 
-  FaDiscord, 
-  FaYoutube 
-} from 'react-icons/fa6';
+import { FaFacebookF, FaDribbble, FaGithub, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-const socialLinks = [
-    { name: 'Facebook', href: 'https://facebook.com/openyhoolceo', icon: <FaFacebookF size={18} /> },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/rumiparvez', icon: <FaLinkedinIn size={18} /> },
-    { name: 'Instagram', href: 'https://instagram.com/openyhoolceo', icon: <FaInstagram size={18} /> },
-    { name: 'X', href: 'https://x.com/openyhoolceo', icon: <FaXTwitter size={18} /> },
-    { name: 'GitHub', href: 'https://github.com/Rumi-Parvez', icon: <FaGithub size={18} /> },
-    { name: 'Discord', href: '#', icon: <FaDiscord size={18} /> }, // Replace # with your Discord invite/username link
-    { name: 'YouTube', href: 'https://youtube.com/@RumiParvez_Mystery', icon: <FaYoutube size={18} /> },
+
+  const socialLinks = [
+    { name: 'Facebook', href: 'https://facebook.com', icon: <FaFacebookF size={18} /> },
+    { name: 'Dribbble', href: 'https://dribbble.com', icon: <FaDribbble size={18} /> },
+    { name: 'GitHub', href: 'https://github.com', icon: <FaGithub size={18} /> },
+    { name: 'X', href: 'https://x.com', icon: <FaXTwitter size={18} /> },
   ];
 
   return (
@@ -39,7 +29,7 @@ const socialLinks = [
                     <li><Link href="/">About</Link></li>
                     <li><Link href="/">Projects</Link></li>
                     <li><Link href="/">Story</Link></li>
-                    <li><Link href="/">Contact</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </div>
 
