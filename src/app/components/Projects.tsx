@@ -132,60 +132,7 @@ const projectsData: Project[] = [
     liveUrl: ``,
     githubUrl: ``
   },
-  {
-    id: 9,
-    year: `2026`,
-    category: `Finance Dashboard`,
-    title: `FinTrack — Personal Finance Dashboard`,
-    description: `A sample dashboard concept for organizing expenses, reviewing budgets, and viewing spending summaries.`,
-    metrics: [
-      {
-        value: `Dashboard`,
-        label: `A centralized financial overview`
-      },
-      {
-        value: `Visual Reports`,
-        label: `Readable spending summaries`
-      }
-    ],
-    skills: [
-      `Next.js`,
-      `TypeScript`,
-      `Tailwind CSS`,
-      `Data Visualization`,
-      `React`
-    ],
-    image: `/images/projects/fintrack.png`,
-    liveUrl: ``,
-    githubUrl: ``
-  },
-  {
-    id: 10,
-    year: `2026`,
-    category: `Weather Application`,
-    title: `SkyCast — Weather Explorer`,
-    description: `A sample weather app concept for displaying current conditions and forecast information using a weather API.`,
-    metrics: [
-      {
-        value: `API`,
-        label: `External weather data integration`
-      },
-      {
-        value: `Responsive`,
-        label: `Weather information on different screens`
-      }
-    ],
-    skills: [
-      `Next.js`,
-      `TypeScript`,
-      `Tailwind CSS`,
-      `REST API`,
-      `React`
-    ],
-    image: `/images/projects/skycast.png`,
-    liveUrl: ``,
-    githubUrl: ``
-  }
+  
 ];
 
 const Projects: React.FC = () => {
