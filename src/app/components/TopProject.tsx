@@ -48,7 +48,7 @@ const topProjectsData: TopProject[] = [
       },
     ],
     skills: [`Next.js`, `TypeScript`, `Tailwind CSS`, `Better Auth`, `REST API`],
-    image: `/images/projects/bazar-dor.png`,
+    image: `/images/agrarg/protfolio.png`,
     liveUrl: `https://bazardor.example.com`,
     githubUrl: `https://github.com/Rumi-Parvez/bazar-dor`,
     themeColor: {
@@ -268,7 +268,7 @@ const TopProjects: React.FC = () => {
                         alt={project.title}
                         width={500}
                         height={500}
-                        className={`object-cover object-top transition-transform duration-700 group-hover:scale-105`}
+                        className={`object-cover object-top transition-transform duration-700 group-hover:scale-105 h-full w-full`}
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
                         }}

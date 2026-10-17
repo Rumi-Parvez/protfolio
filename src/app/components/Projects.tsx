@@ -47,7 +47,7 @@ const projectsData: Project[] = [
       `CSS`,
       `Responsive Design`
     ],
-    image: `/images/projects/portfolio.png`,
+    image: `/images/afargqa/protfolio.png`,
     liveUrl: ``,
     githubUrl: ``
   },
@@ -228,7 +228,7 @@ const Projects: React.FC = () => {
                       alt={project.title}
                       width={500}
                       height={500}
-                      className={`object-cover object-top transition-transform duration-700 group-hover:scale-105`}
+                      className={`object-cover object-top transition-transform duration-700 group-hover:scale-105 h-full w-full`}
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';
                       }}
