@@ -26,9 +26,9 @@ const Footer = () => {
           <div>
                 <ul className='flex justify-between items-center gap-5 font-sans text-gray-400'>
                     <li><Link href="/">Home</Link></li>
-                    <li><Link href="/">About</Link></li>
-                    <li><Link href="/">Projects</Link></li>
-                    <li><Link href="/">Story</Link></li>
+                    <li><Link href="#About">About</Link></li>
+                    <li><Link href="#Projects">Projects</Link></li>
+                    <li><Link href="#Story">Story</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </div>

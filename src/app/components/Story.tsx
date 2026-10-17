@@ -161,7 +161,7 @@ const MyStories: React.FC = () => {
   };
 
   return (
-    <section className={`relative text-white py-24 px-6 font-sans select-none overflow-hidden min-h-[900px] flex flex-col justify-center items-center`}>
+    <section className={`relative text-white py-24 px-6 font-sans select-none overflow-hidden min-h-[900px] flex flex-col justify-center items-center`} id='Story'>
       
       {/* Header */}
       <div className={`text-center max-w-3xl mx-auto mb-16 z-10`}>

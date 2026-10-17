@@ -147,7 +147,7 @@ const topProjectsData: TopProject[] = [
 
 const TopProjects: React.FC = () => {
   return (
-    <section className={`text-white py-24 px-6 font-sans select-none relative`}>
+    <section className={`text-white py-24 px-6 font-sans select-none relative`} id='Projects'>
       <div className={`max-w-5xl mx-auto`}>
         
         {/* Section Header */}

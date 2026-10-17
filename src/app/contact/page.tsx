@@ -102,8 +102,8 @@ const ContactSection: React.FC = () => {
             <span className="text-xs tracking-[0.3em] text-gray-400 uppercase font-semibold block mb-3">
               GET IN TOUCH
             </span>
-            <h2 className="text-4xl md:text-6xl font-normal tracking-tight text-white leading-tight">
-              {`Let's Talk & Build`} <br /> Something Scalable.
+            <h2 className="text-4xl md:text-6xl font-italiana tracking-tight text-white leading-tight">
+              {`Let's Talk & Build Something Scalable.`} 
             </h2>
           </div>
         </div>
