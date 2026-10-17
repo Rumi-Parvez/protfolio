@@ -45,7 +45,8 @@ const Hero = () => {
             <Image
               src={herorumi}
               alt="Rumi Parvez"
-              fill
+              height={400} 
+              width={400}
               priority
               className="object-cover  "
             />

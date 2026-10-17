@@ -192,7 +192,8 @@ const MyStories: React.FC = () => {
               <Image
                 src={profileImg}
                 alt={`Md Rumi Parvez`}
-                fill
+                width={500}
+                height={500}
                 className={`object-cover`}
                 priority
               />

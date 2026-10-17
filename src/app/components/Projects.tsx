@@ -226,7 +226,8 @@ const Projects: React.FC = () => {
                     <Image
                       src={project.image}
                       alt={project.title}
-                      fill
+                      width={500}
+                      height={500}
                       className={`object-cover object-top transition-transform duration-700 group-hover:scale-105`}
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';

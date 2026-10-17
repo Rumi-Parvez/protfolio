@@ -54,7 +54,8 @@ const PhilosophyVideo: React.FC<PhilosophyVideoProps> = ({
               <Image
                 src={poster}
                 alt="Video Thumbnail"
-                fill
+                height={500}
+                width={500}
                 className="object-cover"
                 priority
               />
