@@ -9,56 +9,61 @@ import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <>
-    <div className="hero">
-      <Navbar></Navbar>
-      <div className=" relative container mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto py-10 z-10">
-        <div className="lg:col-span-7 flex flex-col items-start space-y-6">
-          <h1 className="text-6xl  text-white font-fjalla">
-            Engineering <span className="text-8xl font-italiana">scalable</span>{" "}
-            architecture for modern{" "}
-            <span className="text-8xl font-italiana">enterprises</span>
-          </h1>
+      <div className="hero relative overflow-hidden">
+        <Navbar></Navbar>
 
-          <p className="text-neutral-300 text-sm sm:text-base max-w-xl leading-relaxed">
-            Full-Stack Software Engineer specializing in performant React
-            applications, robust Node.js backend systems, and cloud
-            optimization.
-          </p>
+        <div className="relative pt-25 container mx-auto grid grid-cols-1 items-center gap-8 px-4 py-10 sm:px-6 sm:py-12 md:gap-10 md:px-8 lg:grid-cols-12 lg:gap-8 lg:px-16 lg:py-10 z-10">
+          <div className="flex flex-col items-start space-y-5 sm:space-y-6 lg:col-span-7">
+            <h1 className="text-4xl leading-tight text-white font-fjalla sm:text-5xl md:text-6xl lg:text-6xl">
+              Engineering{" "}
+              <span className="text-5xl font-italiana sm:text-6xl md:text-7xl lg:text-8xl">
+                scalable
+              </span>{" "}
+              architecture for modern{" "}
+              <span className="text-5xl font-italiana sm:text-6xl md:text-7xl lg:text-8xl">
+                enterprises
+              </span>
+            </h1>
 
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <Link
-              href="/contact"
-              className="bg-white text-black font-libre px-15 py-3 rounded-[5px] hover:bg-neutral-200 transition  shadow-md ">
-              {`Let's Talk`}
-            </Link>
+            <p className="max-w-xl text-sm leading-relaxed text-neutral-300 sm:text-base">
+              Full-Stack Software Engineer specializing in performant React
+              applications, robust Node.js backend systems, and cloud
+              optimization.
+            </p>
 
-            <Link
-              href="/"
-              className="border border-white/30 bg-black/40 hover:bg-white/10 text-white font-libre px-6 py-3 rounded-[1px] transition flex items-center gap-2 backdrop-blur-sm">
-              Download Resume <FaDownload className="text-xs" />
-            </Link>
+            <div className="flex flex-wrap items-center gap-3 pt-2 sm:gap-4">
+              <Link
+                href="/contact"
+                className="rounded-[5px] bg-white px-8 py-3 text-center font-libre text-black shadow-md transition hover:bg-neutral-200 sm:px-10 md:px-12 lg:px-15"
+              >
+                {`Let's Talk`}
+              </Link>
+
+              <Link
+                href="/"
+                className="flex items-center gap-2 rounded-[1px] border border-white/30 bg-black/40 px-4 py-3 font-libre text-sm text-white backdrop-blur-sm transition hover:bg-white/10 sm:px-6 sm:text-base"
+              >
+                Download Resume <FaDownload className="text-xs" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative flex h-full items-end justify-center pt-4 sm:pt-8 lg:col-span-5 lg:justify-end lg:pt-0">
+            <div className="relative mt-4 h-[320px] w-full max-w-[320px] sm:mt-6 sm:h-[400px] sm:max-w-[380px] md:h-[480px] md:max-w-[420px] lg:mr-4 lg:mt-10 lg:h-[500px] lg:max-w-[480px] xl:mr-20 xl:h-[600px]">
+              <Image
+                src={herorumi}
+                alt="Rumi Parvez"
+                height={400}
+                width={400}
+                priority
+                className="h-full w-full object-contain object-bottom"
+              />
+            </div>
           </div>
         </div>
 
-        <div className="lg:col-span-5 relative flex justify-center lg:justify-end items-end h-full pt-8 lg:pt-0">
-          <div className="relative w-full max-w-[480px] h-[500px] lg:h-[600px] mr-20 mt-10">
-            <Image
-              src={herorumi}
-              alt="Rumi Parvez"
-              height={400} 
-              width={400}
-              priority
-              className="object-cover  "
-            />
-          </div>
-          
-        </div>
-        
+        <div className="pointer-events-none absolute bottom-0 z-10 h-50 w-full rotate-180 bg-gradient-to-b from-black via-black/98 to-transparent"></div>
       </div>
-      <div className="absolute bottom-0  w-full h-50 bg-gradient-to-b from-black via-black/98 to-transparent pointer-events-none rotate-180 z-10"></div>
-      
-    </div>
-   
     </>
   );
 };
