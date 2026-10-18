@@ -54,7 +54,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="overflow-hidden bg-[#222222] px-4 pt-12 pb-8 text-white select-none sm:px-6 sm:pt-14 md:px-10 md:pt-16 lg:px-16">
+      <footer className="overflow-hidden print:hidden bg-[#222222] px-4 pt-12 pb-8 text-white select-none sm:px-6 sm:pt-14 md:px-10 md:pt-16 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-6 text-3xl font-light tracking-tight sm:mb-8 sm:text-4xl md:text-5xl">
             Rumi Parvez

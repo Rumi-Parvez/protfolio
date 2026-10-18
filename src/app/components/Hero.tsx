@@ -38,7 +38,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                href="/"
+                href="/resume"
                 className="flex items-center gap-2 rounded-[1px] border border-white/30 bg-black/40 px-4 py-3 font-libre text-sm text-white backdrop-blur-sm transition hover:bg-white/10 sm:px-6 sm:text-base"
               >
                 Download Resume <FaDownload className="text-xs" />

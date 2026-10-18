@@ -12,7 +12,7 @@
 
 # testing
 /coverage
-
+/out.zip
 # next.js
 /.next/
 /out/

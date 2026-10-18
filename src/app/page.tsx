@@ -13,7 +13,7 @@ import WhyPartnerWithMe from "./components/Whyme";
 export default function Home() {
   return (
     <>
-    <div>
+    <div className="overflow-hidden">
         <Hero></Hero>
         <Tech></Tech>
         <About></About>

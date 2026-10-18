@@ -7,26 +7,29 @@ import rumiparvez from "../../assets/ycb3ja.jpg (1).jpeg";
 
 const Navbar = () => {
     return (
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-15">
-            <div className="fixed top-3 left-1/2 z-50 flex h-14 w-[calc(100%-2rem)] max-w-[1400px] -translate-x-1/2 items-center justify-between rounded-full border border-white/30 bg-black/10 px-4 font-extralight text-white backdrop-blur-xl sm:top-5 sm:h-15 sm:w-[calc(100%-3rem)] sm:px-6 md:px-8 lg:px-10">
+        <div className="w-full">
+            <header className="fixed left-1/2 top-3 z-50 flex h-11 w-[94%] max-w-[1400px] -translate-x-1/2 items-center justify-between gap-1 rounded-full border border-white/30 bg-black/40 px-3 text-white shadow-lg backdrop-blur-md sm:top-5 sm:h-14 sm:w-[calc(100%-2rem)] sm:px-5 md:h-15 md:px-8 lg:px-10 print:hidden">
 
-                <Link href='/'>
-                <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-3">
-                    <Image
-                        src={rumiparvez}
-                        alt="Rumi Parvez"
-                        height={500}
-                        width={500}
-                        className="h-8 w-8 rounded-full object-cover sm:h-10 sm:w-10"
-                    />
-                    <h1 className="font-italiana text-lg sm:text-xl md:text-2xl">
-                        Rumi Parvez
-                    </h1>
-                </div>
+                {/* Logo & Name */}
+                <Link href="/" className="flex min-w-0 shrink items-center">
+                    <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
+                        <Image
+                            src={rumiparvez}
+                            alt="Rumi Parvez"
+                            height={200}
+                            width={200}
+                            priority
+                            className="h-7 w-7 shrink-0 rounded-full object-cover sm:h-10 sm:w-10"
+                        />
+                        <h1 className="truncate font-italiana text-xs font-light sm:text-xl md:text-2xl max-w-[110px] xs:max-w-[140px] sm:max-w-none">
+                            Rumi Parvez
+                        </h1>
+                    </div>
                 </Link>
 
-                <div className="hidden lg:block">
-                    <ul className="flex items-center justify-between gap-4 font-sans text-sm text-white xl:gap-5 xl:text-base">
+                {/* Desktop Navigation */}
+                <nav className="hidden lg:block">
+                    <ul className="flex items-center gap-4 font-sans text-sm font-extralight text-white xl:gap-5 xl:text-base">
                         <li>
                             <Link href="/" className="transition-colors duration-300 hover:text-red-300">
                                 Home
@@ -52,25 +55,24 @@ const Navbar = () => {
                                 Education
                             </Link>
                         </li>
-                        
-                       
                         <li>
                             <Link href="/contact" className="transition-colors duration-300 hover:text-red-300">
                                 Contact
                             </Link>
                         </li>
                     </ul>
-                </div>
+                </nav>
 
+                {/* Contact Button */}
                 <Link
                     href="/contact"
-                    className="flex shrink-0 items-center justify-center gap-1 rounded-[5px] bg-white px-3 py-2 text-xs text-black shadow-md transition duration-300 hover:bg-neutral-200 sm:gap-2 sm:px-5 sm:text-sm md:px-6 lg:px-8"
+                    className="flex shrink-0 whitespace-nowrap items-center gap-1 rounded-full bg-white px-2.5 py-1 text-[10px] font-normal text-black shadow-md transition duration-300 hover:bg-neutral-200 sm:rounded-[5px] sm:px-4 sm:py-2 sm:text-sm md:px-6"
                 >
-                    {`Let's Talk`}
-                    <GoArrowUpRight className="text-base sm:text-xl" />
+                    <span>{`Let's Talk`}</span>
+                    <GoArrowUpRight className="text-xs sm:text-xl" />
                 </Link>
 
-            </div>
+            </header>
         </div>
     );
 };

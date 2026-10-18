@@ -88,3 +88,78 @@ body {
 }
 
 
+@media print {
+  @page {
+    size: A4;
+    margin: 8mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #18181b !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  #resume-document {
+    background: #ffffff !important;
+    color: #18181b !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Printed header: white background */
+  #resume-document > header {
+    background: #ffffff !important;
+    color: #18181b !important;
+    border-bottom: 1px solid #e4e4e7 !important;
+  }
+
+  /* Header text */
+  #resume-document > header p,
+  #resume-document > header a {
+    color: #52525b !important;
+  }
+
+  #resume-document > header h1 {
+    color: #18181b !important;
+  }
+
+  #resume-document > header h1 span {
+    color: #dc2626 !important;
+  }
+
+  #resume-document > header svg {
+    color: #dc2626 !important;
+  }
+
+  /* Hide decorative blur */
+  #resume-document > header > div:first-child {
+    display: none !important;
+  }
+
+  /* Printed footer: white background */
+  #resume-document > footer {
+    background: #ffffff !important;
+    color: #71717a !important;
+    border-top: 1px solid #e4e4e7 !important;
+  }
+
+  #resume-document .project-card,
+  #resume-document .education-card {
+    break-inside: avoid;
+  }
+
+  #resume-document a {
+    text-decoration: none !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+}
