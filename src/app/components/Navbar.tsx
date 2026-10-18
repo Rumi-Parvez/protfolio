@@ -36,6 +36,11 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
+                            <Link href="#About" className="transition-colors duration-300 hover:text-red-300">
+                                Skills
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="#Projects" className="transition-colors duration-300 hover:text-red-300">
                                 Projects
                             </Link>

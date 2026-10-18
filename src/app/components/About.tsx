@@ -31,25 +31,28 @@ const About = () => {
               height={500}
               width={500}
               alt="Rumi Parvez"
-              className="h-96 w-96 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+              className="h-135 w-135 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
             />
           </div>
 
         </div>
 
 
-        <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
+        <div className="lg:col-span-7 flex flex-col justify-center space-y-4">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Rumi Parvez</h2>
             <p className="text-xl font-medium text-red-600 mt-1">Full-Stack Web Developer</p>
           </div>
 
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-            I build modern, responsive, and user-friendly web applications with a focus on clean code, thoughtful design, and practical solutions.
+            {`I'm Rumi Parvez, a Full-Stack Web Developer passionate about building clean, responsive, and user-friendly web applications. My journey began with HTML and CSS and gradually grew into JavaScript, TypeScript, React, Next.js, and backend development.`}
           </p>
 
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-            Currently learning, building, and exploring new ways to turn ideas into real-world products.
+            I enjoy solving problems, writing maintainable code, and turning ideas into practical digital experiences. Outside coding, I love exploring new technologies and continuously learning new things.
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+            {`I'm focused on building real-world projects, improving my skills, and creating products that make a meaningful difference.`}
           </p>
 
 

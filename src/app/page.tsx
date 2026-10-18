@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import ContactCallout from "./components/Mail";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import MyStories from "./components/Story";
 import Tech from "./components/tech";
 import TopProjects from "./components/TopProject";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero></Hero>
         <Tech></Tech>
         <About></About>
+        <Skills></Skills>
         
          <Tech></Tech>
          <TopProjects></TopProjects>
