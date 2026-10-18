@@ -11,7 +11,7 @@ import {
   FaCalendar,
 } from 'react-icons/fa6';
 
-import { topProjectsData } from '@/lib/projects';
+import { topProjects } from '@/lib/projects';
 
 const TopProjects: React.FC = () => {
   return (
@@ -38,7 +38,7 @@ const TopProjects: React.FC = () => {
 
         {/* Stacked Cards Container */}
         <div className="relative flex flex-col gap-12 pb-24">
-          {topProjectsData.map((project, index) => {
+          {topProjects.map((project, index) => {
             const stickyOffset = 100 + index * 32;
 
             const hasLiveUrl =
@@ -71,7 +71,8 @@ const TopProjects: React.FC = () => {
                   </div>
 
                   <span className="text-xs font-mono text-gray-500">
-                    0{index + 1} / 0{topProjectsData.length}
+                    {String(index + 1).padStart(2, '0')} /{' '}
+                    {String(topProjects.length).padStart(2, '0')}
                   </span>
                 </div>
 
@@ -91,7 +92,7 @@ const TopProjects: React.FC = () => {
                       {/* Key Metrics */}
                       <div className="grid grid-cols-2 gap-4 mb-6 p-4 rounded-2xl border border-white/[0.10] bg-white/[0.035] backdrop-blur-xl">
                         {project.metrics.map((metric, idx) => (
-                          <div key={idx} className="flex flex-col">
+                          <div key={`${project.id}-metric-${idx}`} className="flex flex-col">
                             <span className="text-sm md:text-base font-bold text-white font-sans flex items-center gap-1.5">
                               <span
                                 className={`w-2 h-2 rounded-full ${project.themeColor.accentDot} inline-block`}
@@ -111,7 +112,7 @@ const TopProjects: React.FC = () => {
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.skills.map((skill, idx) => (
                         <span
-                          key={idx}
+                          key={`${project.id}-skill-${idx}`}
                           className="px-3 py-1 rounded-lg text-xs font-libre bg-white/[0.035] backdrop-blur-lg border border-white/[0.10] text-gray-300"
                         >
                           {skill}
@@ -165,8 +166,8 @@ const TopProjects: React.FC = () => {
                         width={500}
                         height={500}
                         className="object-cover object-top transition-transform duration-700 group-hover:scale-105 h-full w-full"
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
+                        onError={(event) => {
+                          event.currentTarget.style.display = 'none';
                         }}
                       />
 

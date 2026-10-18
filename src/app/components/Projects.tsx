@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { allProjects } from '@/lib/projects';
+
 import {
   FaArrowUpRightFromSquare,
   FaGithub,
@@ -11,9 +13,10 @@ import {
   FaCalendar,
 } from 'react-icons/fa6';
 
-import { projectsData } from '@/lib/projects';
-
 const Projects: React.FC = () => {
+  // Top Projects-এ দেখানো প্রথম ৪টি বাদ দিয়ে বাকি প্রজেক্ট দেখাবে
+  const otherProjects = allProjects.slice(4);
+
   return (
     <section className="text-white py-24 px-6 font-sans select-none">
       <div className="max-w-6xl mx-auto">
@@ -37,7 +40,7 @@ const Projects: React.FC = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projectsData.map((project) => (
+          {otherProjects.map((project) => (
             <article
               key={project.id}
               className="group relative isolate overflow-hidden rounded-3xl border border-white/[0.12] bg-white/[0.045] backdrop-blur-2xl p-6 md:p-8 flex flex-col justify-between shadow-[inset_0_1px_0_rgba(255,255,255,0.10),0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-500 hover:border-red-600/60 hover:shadow-[0_10px_35px_rgba(239,68,68,0.15)]"

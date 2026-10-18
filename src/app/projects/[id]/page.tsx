@@ -12,10 +12,7 @@ import {
   FaRocket,
 } from 'react-icons/fa6';
 
-import {
-  topProjectsData,
-  projectsData,
-} from '@/lib/projects';
+import { projectsData } from '@/lib/projects';
 
 type ProjectDetailsPageProps = {
   params: Promise<{
@@ -23,7 +20,7 @@ type ProjectDetailsPageProps = {
   }>;
 };
 
-const allProjects = [...topProjectsData, ...projectsData];
+const allProjects = projectsData;
 
 const defaultTheme = {
   accentDot: 'bg-red-500',

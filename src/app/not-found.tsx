@@ -7,7 +7,7 @@ import { FaHouse, FaArrowLeft, FaTriangleExclamation, FaTerminal, FaCompass } fr
 
 export default function NotFound() {
   return (
-    <main className={`relative min-h-screen bg-[#0b0b0b] text-white flex flex-col items-center justify-center px-6 font-sans select-none overflow-hidden py-15`}>
+    <main className={`relative  min-h-screen bg-[#0b0b0b] text-white flex flex-col items-center justify-center px-6 font-sans select-none overflow-hidden pt-35 py-15`}>
       
       {/* Background Ambient Glow Accents */}
       <div className={`absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-full bg-red-600/10 blur-[120px] pointer-events-none`} />
