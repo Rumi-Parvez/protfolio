@@ -23,9 +23,9 @@ export default function Home() {
         <Education></Education>
         
          <Tech></Tech>
-         
+         <PhilosophyVideo></PhilosophyVideo>
          <WhyPartnerWithMe></WhyPartnerWithMe>
-        <PhilosophyVideo></PhilosophyVideo>
+        
        
         
         
