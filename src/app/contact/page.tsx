@@ -100,7 +100,7 @@ ${formData.message}`;
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/rumiparvez',
+      href: 'https://www.linkedin.com/in/rumi-parvez-dev',
       icon: <FaLinkedin size={18} />,
     },
     {
@@ -110,7 +110,7 @@ ${formData.message}`;
     },
     {
       name: 'Instagram',
-      href: 'https://instagram.com/openyhoolceo',
+      href: 'https://www.instagram.com/rumepervez',
       icon: <FaInstagram size={18} />,
     },
     {
@@ -120,7 +120,7 @@ ${formData.message}`;
     },
     {
       name: 'Discord',
-      href: '#',
+      href: 'https://discord.com/users/1560634508821266434',
       icon: <FaDiscord size={18} />,
     },
   ];

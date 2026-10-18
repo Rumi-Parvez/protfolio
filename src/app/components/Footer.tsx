@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 import {
   FaFacebookF,
-  FaLinkedinIn,
   FaGithub,
   FaXTwitter,
   FaDiscord,
   FaYoutube,
   FaInstagram,
+  FaLinkedin,
 } from 'react-icons/fa6';
 
 const Footer = () => {
@@ -17,39 +17,39 @@ const Footer = () => {
   const socialLinks = [
     {
       name: 'Facebook',
-      href: 'https://facebook.com',
+      href: 'https://www.facebook.com/rumepervez',
       icon: <FaFacebookF size={18} />,
     },
     {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com',
-      icon: <FaLinkedinIn size={18} />,
-    },
-    {
-      name: 'X',
-      href: 'https://x.com',
-      icon: <FaXTwitter size={18} />,
-    },
-    {
-      name: 'GitHub',
-      href: 'https://github.com/Rumi-Parvez',
-      icon: <FaGithub size={18} />,
-    },
-    {
-      name: 'Discord',
-      href: 'https://discord.com',
-      icon: <FaDiscord size={18} />,
-    },
-    {
-      name: 'YouTube',
-      href: 'https://youtube.com',
-      icon: <FaYoutube size={18} />,
-    },
-    {
-      name: 'Instagram',
-      href: 'https://instagram.com',
-      icon: <FaInstagram size={18} />,
-    },
+          name: 'GitHub',
+          href: 'https://github.com/Rumi-Parvez',
+          icon: <FaGithub size={18} />,
+        },
+        {
+          name: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/rumi-parvez-dev',
+          icon: <FaLinkedin size={18} />,
+        },
+        {
+          name: 'X / Twitter',
+          href: 'https://x.com/openyhoolceo',
+          icon: <FaXTwitter size={18} />,
+        },
+        {
+          name: 'Instagram',
+          href: 'https://www.instagram.com/rumepervez',
+          icon: <FaInstagram size={18} />,
+        },
+        {
+          name: 'YouTube',
+          href: 'https://youtube.com/@RumiParvez_Mystery',
+          icon: <FaYoutube size={18} />,
+        },
+        {
+          name: 'Discord',
+          href: 'https://discord.com/users/1560634508821266434',
+          icon: <FaDiscord size={18} />,
+        },
   ];
 
   return (

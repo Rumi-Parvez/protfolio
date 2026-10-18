@@ -29,7 +29,7 @@ const ContactCallout = () => {
   };
 
   return (
-    <section className="px-6 py-12 max-w-6xl mx-auto">
+    <section className="px-6 py-12 max-w-6xl mx-auto" id='Mail'>
       {/* Container Card with Liquid Glass Effect */}
       <div className="relative isolate overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-b from-[#1a0808]/90 via-[#400d0d]/85 to-[#801414]/90 px-6 py-16 text-center text-white shadow-[0_20px_80px_-20px_rgba(128,20,20,0.45)] backdrop-blur-2xl">
 

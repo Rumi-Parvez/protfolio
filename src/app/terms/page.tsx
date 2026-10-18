@@ -366,7 +366,7 @@ export default function TermsPage() {
                   Send me a question about these terms.
                 </p>
                 <Link
-                  href="/#Contact"
+                  href="/contact"
                   className="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-red-300 transition-colors hover:text-red-200"
                 >
                   Contact me <FaArrowRight className="text-[10px]" />
@@ -475,7 +475,7 @@ export default function TermsPage() {
             </div>
 
             <Link
-              href="/#Contact"
+              href="/contact"
               className="group inline-flex shrink-0 items-center justify-center gap-3 rounded-xl border border-white/[0.13] bg-white/[0.07] px-6 py-4 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] backdrop-blur-2xl transition-all duration-300 hover:border-red-400/40 hover:bg-red-500/10"
             >
               Contact me

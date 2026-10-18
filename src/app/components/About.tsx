@@ -1,16 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from 'react-icons/fa6'; // Install react-icons if not already installed
+import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope, FaYoutube, FaDiscord, FaInstagram, FaFacebookF } from 'react-icons/fa6'; // Install react-icons if not already installed
 
 import rumi from "../../assets/1759495534186.jpg";
 
 const About = () => {
   const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/your-username', icon: <FaGithub size={22} /> },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/your-username', icon: <FaLinkedin size={22} /> },
-    { name: 'X', href: 'https://x.com/your-username', icon: <FaXTwitter size={22} /> },
-    { name: 'Contact', href: 'mailto:your.email@example.com', icon: <FaEnvelope size={22} /> },
+        {
+              name: 'GitHub',
+              href: 'https://github.com/Rumi-Parvez',
+              icon: <FaGithub size={18} />,
+            },
+            {
+              name: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/rumi-parvez-dev',
+              icon: <FaLinkedin size={18} />,
+            },
+            {
+              name: 'X / Twitter',
+              href: 'https://x.com/openyhoolceo',
+              icon: <FaXTwitter size={18} />,
+            },
+           
+    { name: 'Contact', href: '#Mail', icon: <FaEnvelope size={22} /> },
   ];
 
 
@@ -78,7 +91,7 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.name}
-                className="p-3 bg-transparent text-gray-200 rounded-full hover:bg-red-700 hover:text-white transition-colors duration-300 shadow-md"
+                className="p-3 bg-transparent text-gray-200 rounded-full  hover:text-red-600 transition-colors duration-300 shadow-md"
               >
                 {link.icon}
               </a>
