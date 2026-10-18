@@ -4,7 +4,6 @@ import Link from "next/link";
 import { FaDownload } from "react-icons/fa";
 
 import herorumi from "../../assets/ChatGPT Image Jun 10, 2026, 07_46_13 PM-Photoroom.png";
-import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
