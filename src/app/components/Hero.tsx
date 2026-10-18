@@ -54,7 +54,7 @@ const Hero = () => {
                 height={400}
                 width={400}
                 priority
-                className="h-full w-full object-contain object-bottom"
+                className="h-140 pb-50 md:pb-0  md:h-full md:w-full object-contain object-bottom"
               />
             </div>
           </div>

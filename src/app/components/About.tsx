@@ -44,7 +44,7 @@ const About = () => {
               height={500}
               width={500}
               alt="Rumi Parvez"
-              className="h-135 w-135 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+              className="h-80 w-80 md:h-135 md:w-135 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
             />
           </div>
 
