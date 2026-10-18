@@ -80,6 +80,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
+                            <Link href="#Skills" className="transition-colors duration-300 hover:text-red-300">
+                                Skills
+                            </Link>
+                        </li>
+                        <li>
                   <Link
                     href="#Projects"
                     className="transition-colors duration-300 hover:text-white"
@@ -87,14 +92,14 @@ const Footer = () => {
                     Projects
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="#Story"
-                    className="transition-colors duration-300 hover:text-white"
-                  >
-                    Story
-                  </Link>
-                </li>
+                        <li>
+                            <Link href="#Education" className="transition-colors duration-300 hover:text-red-300">
+                                Education
+                            </Link>
+                        </li>
+
+                
+                
                 <li>
                   <Link
                     href="/contact"
@@ -150,7 +155,7 @@ const Footer = () => {
       </footer>
 
       <div className="mt-[-12px] w-full overflow-hidden bg-[#222222] pt-3 text-center leading-none sm:mt-[-18px] sm:pt-4 md:mt-[-25px]">
-        <h1 className="pointer-events-none mx-auto whitespace-nowrap text-[16vw] font-fjalla uppercase tracking-[0.08em] text-white opacity-90 sm:text-[17vw] md:text-[16vw] lg:text-[15vw]">
+        <h1 className="pointer-events-none mx-auto whitespace-nowrap text-[16vw] font-fjalla uppercase tracking-[0.08em] text-white opacity-90 sm:text-[17vw] md:text-[16vw] lg:text-[17vw]">
           RUMI PARVEZ
         </h1>
       </div>

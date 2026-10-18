@@ -58,13 +58,13 @@ const About = () => {
 
           <div className="flex flex-wrap gap-4 pt-2">
             <Link
-              href="#projects"
+              href="#Projects"
               className="px-6 py-3 bg-red-700 text-white font-semibold rounded-lg shadow-md hover:bg-red-800 transition-colors duration-300"
             >
               View My Work
             </Link>
             <a
-              href="mailto:your.email@example.com"
+              href="/contact"
               className="px-6 py-3 border-2 border-red-700 text-red-700 dark:text-red-500 font-semibold rounded-lg hover:bg-red-700 hover:text-white transition-colors duration-300"
             >
               {`Let's Connect`}

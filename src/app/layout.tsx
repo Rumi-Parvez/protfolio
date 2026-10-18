@@ -7,6 +7,8 @@ import {
   Libre_Caslon_Text,
   Italiana,
 } from "next/font/google";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,7 +52,14 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${fjallaOne.variable} ${libreCaslon.variable} ${italiana.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <Navbar></Navbar>
+
+        <main>
+          {children}
+          </main>
+          <Footer></Footer>
+          </body>
     </html>
   );
 }

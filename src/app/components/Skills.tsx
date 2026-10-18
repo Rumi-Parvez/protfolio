@@ -95,8 +95,7 @@ const categories: SkillCategory[] = [
     title: 'UI/UX & Design',
     skills: [
       { name: 'Figma', icon: <FaFigma />, color: 'text-pink-400' },
-      { name: 'Photoshop', icon: <FaPaintBrush />
-, color: 'text-blue-400' },
+      { name: 'Photoshop', icon: <FaPaintBrush />, color: 'text-blue-400' },
       { name: 'Canva', icon: <FaPalette />, color: 'text-cyan-400' },
     ],
   },
@@ -143,20 +142,21 @@ const Skills: React.FC = () => {
   return (
     <section
       id="Skills"
-      className="relative overflow-hidden bg-[#0b0e13] px-4 py-20 text-white sm:px-6 md:px-8 lg:px-10"
+      className="relative isolate overflow-hidden bg-[#08090d] px-4 py-20 text-white sm:px-6 md:px-8 lg:px-10"
     >
-      <div className="pointer-events-none absolute left-1/4 top-10 h-64 w-64 rounded-full bg-red-600/10 blur-[120px]" />
-
-      <div className="pointer-events-none absolute bottom-10 right-10 h-64 w-64 rounded-full bg-red-900/10 blur-[120px]" />
+      {/* Ambient background glow */}
+      <div className="pointer-events-none absolute -left-20 top-20 h-72 w-72 rounded-full bg-red-600/15 blur-[120px]" />
+      <div className="pointer-events-none absolute -right-20 bottom-10 h-80 w-80 rounded-full bg-rose-500/10 blur-[130px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-red-950/20 blur-[150px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mb-12 text-center sm:mb-16">
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-red-500">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-red-400">
             Technical Expertise
           </p>
 
           <h2 className="font-italiana text-4xl tracking-tight sm:text-5xl md:text-6xl">
-            Skills & Capabilities
+            Skills &amp; Capabilities
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-gray-400 sm:text-base">
@@ -165,17 +165,27 @@ const Skills: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-px overflow-hidden border border-gray-700/80 bg-gray-700/80 sm:grid-cols-2 lg:grid-cols-6">
+        {/* Liquid glass category grid */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6">
           {categories.map((category) => (
             <div
               key={category.title}
-              className={`group flex min-h-40 flex-col items-center justify-center bg-[#0d1117] px-4 py-7 transition-colors duration-300 hover:bg-[#141922] sm:px-5 ${
+              className={`group relative isolate flex min-h-44 flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/[0.10] bg-white/[0.035] px-4 py-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),0_8px_32px_rgba(0,0,0,0.25)] backdrop-blur-2xl transition-all duration-500 hover:-translate-y-1 hover:border-red-400/30 hover:bg-white/[0.065] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_12px_40px_rgba(239,68,68,0.10)] sm:px-5 ${
                 category.wide
                   ? 'sm:col-span-2 lg:col-span-6'
                   : 'lg:col-span-3'
               }`}
             >
-              <h3 className="mb-6 text-center text-base font-semibold text-gray-100 transition-colors duration-300 group-hover:text-red-400 sm:text-lg">
+              {/* Glass reflection */}
+              <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-white/[0.07] via-transparent to-red-500/[0.035] opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
+
+              {/* Subtle liquid glow */}
+              <div className="pointer-events-none absolute -right-10 -top-12 -z-10 h-32 w-32 rounded-full bg-red-500/[0.08] blur-3xl transition-all duration-500 group-hover:bg-red-500/[0.18]" />
+
+              {/* Top glass highlight */}
+              <div className="pointer-events-none absolute inset-x-5 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
+              <h3 className="mb-6 text-center text-base font-semibold text-gray-100 transition-colors duration-300 group-hover:text-red-300 sm:text-lg">
                 {category.title}
               </h3>
 
@@ -188,19 +198,20 @@ const Skills: React.FC = () => {
                     <div
                       title={skill.name}
                       aria-label={skill.name}
-                      className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/5 bg-[#202633] text-2xl transition-all duration-300 hover:-translate-y-1 hover:border-red-500/50 hover:bg-[#2b3241] hover:shadow-[0_5px_20px_rgba(239,68,68,0.12)] sm:h-12 sm:w-12"
+                      className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/[0.10] bg-white/[0.055] text-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.10)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-red-400/50 hover:bg-red-500/[0.10] hover:shadow-[0_0_24px_rgba(239,68,68,0.15)] sm:h-12 sm:w-12"
                     >
-                      <span className={skill.color}>
-                        {skill.icon}
-                      </span>
+                      <span className={skill.color}>{skill.icon}</span>
                     </div>
 
-                    <span className="pointer-events-none absolute -top-9 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-700 bg-[#171b23] px-2 py-1 text-xs text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover/icon:opacity-100">
+                    <span className="pointer-events-none absolute -top-9 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-lg border border-white/10 bg-[#15151b]/90 px-2.5 py-1.5 text-xs text-white opacity-0 shadow-xl backdrop-blur-xl transition-opacity duration-200 group-hover/icon:opacity-100">
                       {skill.name}
                     </span>
                   </div>
                 ))}
               </div>
+
+              {/* Bottom glass reflection */}
+              <div className="pointer-events-none absolute inset-x-8 bottom-0 h-px bg-gradient-to-r from-transparent via-red-400/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             </div>
           ))}
         </div>

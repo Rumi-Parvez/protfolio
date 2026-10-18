@@ -20,6 +20,7 @@ const WhyPartnerWithMe: React.FC = () => {
           <span className="text-xs tracking-[0.3em] text-gray-400 uppercase font-semibold block mb-3">
             WHY PARTNER WITH ME
           </span>
+
           <h2 className="text-4xl md:text-6xl font-italiana tracking-tight text-white leading-tight">
             Why Partner With Me <br /> Today And Always?
           </h2>
@@ -28,34 +29,44 @@ const WhyPartnerWithMe: React.FC = () => {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Card 1: Production-Grade Reliability */}
-          <div className="relative overflow-hidden rounded-3xl border border-gray-800/80 bg-gradient-to-br from-[#1c0c0c] via-[#120a0a] to-[#080505] p-8 md:p-10 flex flex-col justify-between shadow-2xl group min-h-[340px]">
+          <div className="relative isolate overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-[#1c0c0c]/85 via-[#120a0a]/80 to-[#080505]/85 p-8 md:p-10 flex flex-col justify-between shadow-[0_20px_60px_-20px_rgba(239,68,68,0.15)] backdrop-blur-2xl group min-h-[340px] transition-all duration-500 hover:border-white/25 hover:shadow-[0_20px_70px_-20px_rgba(239,68,68,0.25)]">
+
+            {/* Liquid Glass Reflections */}
+            <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-white/[0.08] via-white/[0.02] to-transparent" />
+            <div className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
             {/* Ambient Red Glow Background Accent */}
             <div className="absolute top-0 left-0 w-80 h-80 bg-red-900/20 rounded-full blur-3xl pointer-events-none group-hover:bg-red-800/30 transition-all duration-500" />
 
             {/* Graphic Illustration */}
             <div className="relative z-10 flex items-center gap-6 my-auto pt-2 pb-8">
               {/* Main Code Box */}
-              <div className="relative flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-950 border border-gray-700/60 shadow-xl shrink-0">
+              <div className="relative flex items-center justify-center w-16 h-16 rounded-2xl bg-white/[0.07] backdrop-blur-xl border border-white/15 shadow-xl shrink-0">
                 <FaCode className="text-gray-300 text-2xl" />
+
                 {/* Glowing Vertical Laser Line */}
                 <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-1 h-14 bg-red-500 shadow-[0_0_12px_#ef4444]" />
               </div>
 
               {/* Tech Stack Floating Badges */}
               <div className="grid grid-cols-3 gap-3 text-gray-400 text-lg">
-                <div className="p-2 rounded-lg bg-gray-900/80 border border-gray-800 flex items-center justify-center">
+                <div className="p-2 rounded-lg bg-white/[0.06] border border-white/15 backdrop-blur-xl shadow-inner flex items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25">
                   <SiReact className="text-cyan-400" />
                 </div>
-                <div className="p-2 rounded-lg bg-gray-900/80 border border-gray-800 flex items-center justify-center">
+
+                <div className="p-2 rounded-lg bg-white/[0.06] border border-white/15 backdrop-blur-xl shadow-inner flex items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25">
                   <SiNextdotjs className="text-white" />
                 </div>
-                <div className="p-2 rounded-lg bg-gray-900/80 border border-gray-800 flex items-center justify-center">
+
+                <div className="p-2 rounded-lg bg-white/[0.06] border border-white/15 backdrop-blur-xl shadow-inner flex items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25">
                   <SiTailwindcss className="text-sky-400" />
                 </div>
-                <div className="p-2 rounded-lg bg-gray-900/80 border border-gray-800 flex items-center justify-center">
+
+                <div className="p-2 rounded-lg bg-white/[0.06] border border-white/15 backdrop-blur-xl shadow-inner flex items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25">
                   <SiNodedotjs className="text-green-500" />
                 </div>
-                <div className="p-2 rounded-lg bg-gray-900/80 border border-gray-800 flex items-center justify-center">
+
+                <div className="p-2 rounded-lg bg-white/[0.06] border border-white/15 backdrop-blur-xl shadow-inner flex items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25">
                   <SiTypescript className="text-blue-500" />
                 </div>
               </div>
@@ -66,6 +77,7 @@ const WhyPartnerWithMe: React.FC = () => {
               <h3 className="text-2xl font-fjalla text-white mb-2">
                 Production-Grade Reliability
               </h3>
+
               <p className="text-sm text-gray-400 font-light leading-relaxed">
                 Clean, thoroughly tested, enterprise-ready source code with full observability baked in from day one.
               </p>
@@ -73,7 +85,12 @@ const WhyPartnerWithMe: React.FC = () => {
           </div>
 
           {/* Card 2: Performance First Mindset */}
-          <div className="relative overflow-hidden rounded-3xl border border-gray-800/80 bg-gradient-to-br from-[#1c0c0c] via-[#120a0a] to-[#080505] p-8 md:p-10 flex flex-col justify-between shadow-2xl group min-h-[340px]">
+          <div className="relative isolate overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-[#1c0c0c]/85 via-[#120a0a]/80 to-[#080505]/85 p-8 md:p-10 flex flex-col justify-between shadow-[0_20px_60px_-20px_rgba(239,68,68,0.15)] backdrop-blur-2xl group min-h-[340px] transition-all duration-500 hover:border-white/25 hover:shadow-[0_20px_70px_-20px_rgba(239,68,68,0.25)]">
+
+            {/* Liquid Glass Reflections */}
+            <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-white/[0.08] via-white/[0.02] to-transparent" />
+            <div className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
             {/* Ambient Red Glow */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-red-900/20 rounded-full blur-3xl pointer-events-none group-hover:bg-red-800/30 transition-all duration-500" />
 
@@ -92,6 +109,7 @@ const WhyPartnerWithMe: React.FC = () => {
                   strokeOpacity="0.4"
                   fill="none"
                 />
+
                 {/* Main Dynamic Wave */}
                 <path
                   d="M0 50 Q 70 80, 140 50 T 280 50 T 400 50"
@@ -99,10 +117,35 @@ const WhyPartnerWithMe: React.FC = () => {
                   strokeWidth="2.5"
                   fill="none"
                 />
+
                 {/* Center Target Indicator */}
-                <circle cx="280" cy="50" r="5" fill="#ef4444" className="animate-pulse" />
-                <line x1="280" y1="30" x2="280" y2="70" stroke="#ef4444" strokeWidth="1" strokeDasharray="2 2" />
-                <line x1="260" y1="50" x2="300" y2="50" stroke="#ef4444" strokeWidth="1" strokeDasharray="2 2" />
+                <circle
+                  cx="280"
+                  cy="50"
+                  r="5"
+                  fill="#ef4444"
+                  className="animate-pulse"
+                />
+
+                <line
+                  x1="280"
+                  y1="30"
+                  x2="280"
+                  y2="70"
+                  stroke="#ef4444"
+                  strokeWidth="1"
+                  strokeDasharray="2 2"
+                />
+
+                <line
+                  x1="260"
+                  y1="50"
+                  x2="300"
+                  y2="50"
+                  stroke="#ef4444"
+                  strokeWidth="1"
+                  strokeDasharray="2 2"
+                />
               </svg>
             </div>
 
@@ -111,6 +154,7 @@ const WhyPartnerWithMe: React.FC = () => {
               <h3 className="text-2xl font-fjalla text-white mb-2">
                 Performance First Mindset
               </h3>
+
               <p className="text-sm text-gray-400 font-light leading-relaxed">
                 Core Web Vitals, ultra-fast render, and aggressive asset optimization across every critical path.
               </p>
@@ -118,18 +162,24 @@ const WhyPartnerWithMe: React.FC = () => {
           </div>
 
           {/* Card 3: Scalable Cloud Architecture */}
-          <div className="relative overflow-hidden rounded-3xl border border-gray-800/80 bg-gradient-to-br from-[#1c0c0c] via-[#120a0a] to-[#080505] p-8 md:p-10 flex flex-col justify-between shadow-2xl group min-h-[340px]">
+          <div className="relative isolate overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-[#1c0c0c]/85 via-[#120a0a]/80 to-[#080505]/85 p-8 md:p-10 flex flex-col justify-between shadow-[0_20px_60px_-20px_rgba(239,68,68,0.15)] backdrop-blur-2xl group min-h-[340px] transition-all duration-500 hover:border-white/25 hover:shadow-[0_20px_70px_-20px_rgba(239,68,68,0.25)]">
+
+            {/* Liquid Glass Reflections */}
+            <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-white/[0.08] via-white/[0.02] to-transparent" />
+            <div className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
             <div className="absolute bottom-0 left-0 w-80 h-80 bg-red-900/20 rounded-full blur-3xl pointer-events-none group-hover:bg-red-800/30 transition-all duration-500" />
 
             {/* Dashboard / Grid Architecture Visual */}
             <div className="relative z-10 w-full my-auto py-4">
-              <div className="bg-gradient-to-r from-gray-900 to-black p-4 rounded-xl border border-gray-800 flex items-center justify-between">
+              <div className="bg-white/[0.06] backdrop-blur-xl p-4 rounded-xl border border-white/15 shadow-inner flex items-center justify-between">
                 <div className="flex gap-2">
                   <div className="w-3 h-3 rounded-full bg-red-500/80" />
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                   <div className="w-3 h-3 rounded-full bg-green-500/80" />
                 </div>
-                <div className="px-3 py-1 bg-red-950/60 border border-red-800/50 rounded-lg text-xs text-red-400 font-mono">
+
+                <div className="px-3 py-1 bg-red-500/10 backdrop-blur-md border border-red-400/20 rounded-lg text-xs text-red-400 font-mono">
                   scale: auto
                 </div>
               </div>
@@ -140,6 +190,7 @@ const WhyPartnerWithMe: React.FC = () => {
               <h3 className="text-2xl font-fjalla text-white mb-2">
                 Scalable Cloud Architecture
               </h3>
+
               <p className="text-sm text-gray-400 font-light leading-relaxed">
                 Serverless microservices, secure API design, and efficient data pipelines built to grow with load.
               </p>
@@ -147,16 +198,54 @@ const WhyPartnerWithMe: React.FC = () => {
           </div>
 
           {/* Card 4: Business-Driven Decisions */}
-          <div className="relative overflow-hidden rounded-3xl border border-gray-800/80 bg-gradient-to-br from-[#1c0c0c] via-[#120a0a] to-[#080505] p-8 md:p-10 flex flex-col justify-between shadow-2xl group min-h-[340px]">
+          <div className="relative isolate overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-[#1c0c0c]/85 via-[#120a0a]/80 to-[#080505]/85 p-8 md:p-10 flex flex-col justify-between shadow-[0_20px_60px_-20px_rgba(239,68,68,0.15)] backdrop-blur-2xl group min-h-[340px] transition-all duration-500 hover:border-white/25 hover:shadow-[0_20px_70px_-20px_rgba(239,68,68,0.25)]">
+
+            {/* Liquid Glass Reflections */}
+            <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-white/[0.08] via-white/[0.02] to-transparent" />
+            <div className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
             <div className="absolute bottom-0 right-0 w-80 h-80 bg-red-900/25 rounded-full blur-3xl pointer-events-none group-hover:bg-red-800/35 transition-all duration-500" />
 
             {/* Dotted Globe Graphic */}
             <div className="relative z-10 w-full h-32 my-auto flex items-end justify-end overflow-hidden">
-              <svg className="w-64 h-64 -mb-16 -mr-8" viewBox="0 0 200 200" fill="none">
-                <circle cx="100" cy="100" r="80" stroke="#ef4444" strokeWidth="1" strokeDasharray="3 3" opacity="0.6" />
-                <circle cx="100" cy="100" r="60" stroke="#f97316" strokeWidth="1" strokeDasharray="4 4" opacity="0.8" />
-                <path d="M 20 100 A 80 40 0 0 0 180 100" stroke="#ef4444" strokeWidth="1.5" strokeDasharray="2 2" />
-                <path d="M 40 100 A 60 30 0 0 0 160 100" stroke="#f97316" strokeWidth="1.5" strokeDasharray="2 2" />
+              <svg
+                className="w-64 h-64 -mb-16 -mr-8"
+                viewBox="0 0 200 200"
+                fill="none"
+              >
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  stroke="#ef4444"
+                  strokeWidth="1"
+                  strokeDasharray="3 3"
+                  opacity="0.6"
+                />
+
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="60"
+                  stroke="#f97316"
+                  strokeWidth="1"
+                  strokeDasharray="4 4"
+                  opacity="0.8"
+                />
+
+                <path
+                  d="M 20 100 A 80 40 0 0 0 180 100"
+                  stroke="#ef4444"
+                  strokeWidth="1.5"
+                  strokeDasharray="2 2"
+                />
+
+                <path
+                  d="M 40 100 A 60 30 0 0 0 160 100"
+                  stroke="#f97316"
+                  strokeWidth="1.5"
+                  strokeDasharray="2 2"
+                />
               </svg>
             </div>
 
@@ -165,6 +254,7 @@ const WhyPartnerWithMe: React.FC = () => {
               <h3 className="text-2xl font-fjalla text-white mb-2">
                 Business-Driven Decisions
               </h3>
+
               <p className="text-sm text-gray-400 font-light leading-relaxed">
                 Cross-functional alignment, clear technical communication, and product strategy that ships outcomes.
               </p>

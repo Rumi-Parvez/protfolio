@@ -10,7 +10,6 @@ const Hero = () => {
   return (
     <>
       <div className="hero relative overflow-hidden">
-        <Navbar></Navbar>
 
         <div className="relative pt-25 container mx-auto grid grid-cols-1 items-center gap-8 px-4 py-10 sm:px-6 sm:py-12 md:gap-10 md:px-8 lg:grid-cols-12 lg:gap-8 lg:px-16 lg:py-10 z-10">
           <div className="flex flex-col items-start space-y-5 sm:space-y-6 lg:col-span-7">

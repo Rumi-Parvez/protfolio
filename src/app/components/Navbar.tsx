@@ -10,6 +10,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-15">
             <div className="fixed top-3 left-1/2 z-50 flex h-14 w-[calc(100%-2rem)] max-w-[1400px] -translate-x-1/2 items-center justify-between rounded-full border border-white/30 bg-black/10 px-4 font-extralight text-white backdrop-blur-xl sm:top-5 sm:h-15 sm:w-[calc(100%-3rem)] sm:px-6 md:px-8 lg:px-10">
 
+                <Link href='/'>
                 <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-3">
                     <Image
                         src={rumiparvez}
@@ -22,6 +23,7 @@ const Navbar = () => {
                         Rumi Parvez
                     </h1>
                 </div>
+                </Link>
 
                 <div className="hidden lg:block">
                     <ul className="flex items-center justify-between gap-4 font-sans text-sm text-white xl:gap-5 xl:text-base">
@@ -36,7 +38,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#About" className="transition-colors duration-300 hover:text-red-300">
+                            <Link href="#Skills" className="transition-colors duration-300 hover:text-red-300">
                                 Skills
                             </Link>
                         </li>
@@ -46,10 +48,12 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#Story" className="transition-colors duration-300 hover:text-red-300">
-                                Story
+                            <Link href="#Education" className="transition-colors duration-300 hover:text-red-300">
+                                Education
                             </Link>
                         </li>
+                        
+                       
                         <li>
                             <Link href="/contact" className="transition-colors duration-300 hover:text-red-300">
                                 Contact
