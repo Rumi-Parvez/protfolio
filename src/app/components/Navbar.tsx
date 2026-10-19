@@ -36,22 +36,22 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#About" className="transition-colors duration-300 hover:text-red-300">
+                            <Link href="/#About" className="transition-colors duration-300 hover:text-red-300">
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="#Skills" className="transition-colors duration-300 hover:text-red-300">
+                            <Link href="/#Skills" className="transition-colors duration-300 hover:text-red-300">
                                 Skills
                             </Link>
                         </li>
                         <li>
-                            <Link href="#Projects" className="transition-colors duration-300 hover:text-red-300">
+                            <Link href="/#Projects" className="transition-colors duration-300 hover:text-red-300">
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link href="#Education" className="transition-colors duration-300 hover:text-red-300">
+                            <Link href="/#Education" className="transition-colors duration-300 hover:text-red-300">
                                 Education
                             </Link>
                         </li>
